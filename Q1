@@ -1,0 +1,76 @@
+N = input("The total number N (1 ≤ N ≤ 1000) of T-shirts in shop:")
+Ns = input("The T-shirt sizes in shop:")
+M = input("The total number M (1 ≤ M ≤ N) of requests:")
+Ms = input("The requested sizes:")
+s = 0
+Nss = Ns.split( )
+for n in Nss:
+  if n == "XXS":
+    n = 0
+  elif n  == "XS":
+    n = 1
+  elif n  == "S":
+    n = 2
+  elif n  == "M":
+    n = 3
+  elif n  == "L":
+    n = 4
+  elif n  == "XL":
+    n = 5
+  elif n  == "XXL":
+    n = 6
+  elif n  == "XXXL":
+    n = 7
+  elif n  == "XXXXL":
+    n = 8
+  elif n  == "XXXXXL":
+    n = 9
+  elif n  == "XXXXXXL":
+    n = 10
+  elif n  == "XXXXXXXL":
+    n = 11
+  elif n  == "XXXXXXXXL":
+    n = 12
+  elif n  == "XXXXXXXXXL":
+    n = 13
+
+Mss = Ms.split( )
+for m in Mss:
+  if m == "XXS":
+    m = 0
+  elif m  == "XS":
+    m = 1
+  elif m  == "S":
+    m = 2
+  elif m  == "M":
+    m = 3
+  elif m  == "L":
+    m = 4
+  elif m  == "XL":
+    m = 5
+  elif m  == "XXL":
+    m = 6
+  elif m  == "XXXL":
+    m = 7
+  elif m  == "XXXXL":
+    m = 8
+  elif m  == "XXXXXL":
+    m = 9
+  elif m  == "XXXXXXL":
+    m = 10
+  elif m  == "XXXXXXXL":
+    m = 11
+  elif m  == "XXXXXXXXL":
+    m = 12
+  elif m  == "XXXXXXXXXL":
+    m = 13
+
+for i in Nss:
+  for j in Mss:
+    if i >= j:
+      s = s+1
+
+if N>=M and s==M:
+  print("Yes")
+else:
+  print("No")
